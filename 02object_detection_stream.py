@@ -9,7 +9,7 @@ app = Flask(__name__)
 model = torch.hub.load('ultralytics/yolov5', 'yolov5n')  # You can change 'yolov5n' to 'yolov5s' or 'yolov5m'
 
 # Open the camera (0 for the default camera, or you can try 1, 2, etc. if you have external cameras)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 if not cap.isOpened():
     print("Error: Unable to access the camera.")
