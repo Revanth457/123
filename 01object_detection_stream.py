@@ -5,7 +5,7 @@ from flask import Flask, Response
 # Initialize Flask application
 app = Flask(__name__)
 
-# Load the pre-trained YOLOv5 model (you can replace 'yolov5n' with other models like 'yolov5s' or 'yolov5m')
+# Load YOLOv5 model (you can replace 'yolov5n' with other models like 'yolov5s' or 'yolov5m')
 model = torch.hub.load('ultralytics/yolov5', 'yolov5n')  # You can change 'yolov5n' to 'yolov5s' or 'yolov5m'
 
 # Open the camera (0 for the default camera, or you can try 1, 2, etc. if you have external cameras)
